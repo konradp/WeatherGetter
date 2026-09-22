@@ -15,10 +15,6 @@ WeatherGetter is an ASP.NET Core Web API for retrieving, storing, and managing w
 - Swagger UI for API documentation
 - Automated unit tests with xUnit and EF Core InMemory
 
-## Presentation
-
-<a href="https://www.youtube.com/watch?v=q3m4nJmy7wA" target="_blank">Watch the project presentation on YouTube</a>
-
 ## Technologies
 
 - ASP.NET Core (.NET 8)
