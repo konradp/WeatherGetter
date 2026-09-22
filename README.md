@@ -14,7 +14,7 @@ WeatherGetter is an ASP.NET Core Web API for retrieving, storing, and managing w
 
 ## Presentation
 
-<a href="https://www.youtube.com/watch?v=LvGLFAnlJyU" target="_blank">Watch the project presentation on YouTube</a>
+<a href="https://www.youtube.com/watch?v=q3m4nJmy7wA" target="_blank">Watch the project presentation on YouTube</a>
 
 ## Technologies
 
