@@ -10,7 +10,10 @@ WeatherGetter is an ASP.NET Core Web API for retrieving, storing, and managing w
 - Retrieve weather data by city or date
 - List all cities and weather records
 - Delete cities and their weather data
+- Background weather collection with hosted service
+- Async API and database operations (EF Core async queries)
 - Swagger UI for API documentation
+- Automated unit tests with xUnit and EF Core InMemory
 
 ## Presentation
 
@@ -22,6 +25,9 @@ WeatherGetter is an ASP.NET Core Web API for retrieving, storing, and managing w
 - Entity Framework Core (SQL Server)
 - Swashbuckle (Swagger)
 - Hosted background service for weather tasks
+- xUnit (unit testing)
+- EF Core InMemory provider (test database)
+- coverlet.collector (test coverage data collector)
 
 ## Getting Started
 
@@ -33,6 +39,25 @@ WeatherGetter is an ASP.NET Core Web API for retrieving, storing, and managing w
    dotnet run
    ```
 5. Access Swagger UI at `http://localhost:5000/swagger`.
+
+## Tests
+
+Unit tests are located in the `WeatherGetter.Tests` project.
+
+- Run all tests:
+   ```pwsh
+   dotnet test WeatherGetter.sln
+   ```
+- Run tests with detailed output:
+   ```pwsh
+   dotnet test WeatherGetter.sln -v normal
+   ```
+
+Current tests cover:
+
+- `WeatherService` parsing and URL-building logic
+- Duplicate weather record prevention logic
+- `WeatherController` core flows (add city, list/filter data, delete city)
 
 ## API Endpoints
 
